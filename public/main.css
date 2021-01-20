@@ -122,8 +122,8 @@ ul.menu button img{padding: 0 10px;width: 20px;height: 20px;margin-bottom: 5px;}
 .listWorks{width: 100%;}
 .listWorks h1{color:#eee;font-size: 40px;margin-bottom: 40px;text-transform: uppercase;}
 
-.listWorks .icons{display: block;margin: 20px 0;height:20px;}
-.listWorks .icons img{width: 28px;margin-bottom: 10px;}
+.listWorks .icons{display: flex;margin: 20px 0 0;flex-wrap: wrap;}
+.listWorks .icons img{width: auto;margin-bottom: 10px;height: 28px;}
 
 .listWorks .filterListWorks{display: flex;}
 .listWorks .filterListWorks button{color:#fff;padding: 10px;margin-right: 10px;text-transform: uppercase;}
