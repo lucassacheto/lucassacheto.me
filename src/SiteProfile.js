@@ -2,7 +2,7 @@ const SiteProfile = [
     {
         id: 1,
         name: "Lucas Sacheto",
-        avatarURL: "https://pbs.twimg.com/profile_images/1316183077404782593/Idvn7oVR_400x400.jpg",
+        avatarURL: "https://avatars.githubusercontent.com/u/12189408",
         email:"mailto:hi@lucassacheto.me",
         nameLinkedin: "Lucas Sacheto",
         urlLinkedin: "",
