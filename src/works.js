@@ -60,6 +60,21 @@ const Works = [
         wordpress: "",
         photoshop:"",
         github: "./assets/github.png"
+    },
+    {
+        id: 5,
+        name: "Tax Calculator",
+        description: "Canadian Tax Calculator build in React",
+        type: "app",
+        url: "https://lucassacheto.me/lucassacheto/tax-calculator",
+        html: "./assets/html5.png",
+        css: "./assets/css3.png",
+        js: "./assets/javascript.png",
+        react: "./assets/react.png",
+        node:"",
+        wordpress: "",
+        photoshop:"",
+        github: "./assets/github.png"
     }
 ]
 

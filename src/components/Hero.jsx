@@ -1,35 +1,29 @@
 import React from "react";
-import Particles from "react-particles-js";
-
 
 function Hero(){
 
-    const particlesOptions = {
-        particles: {
-        number: {
-            value: 100,
-            density: {
-            enable: true,
-            value_area: 600,
-            
-            }
-        },
-        color: {
-            value: "#fff"
-        },
-        line_linked: {
-            enable: "true",
-            color: "#fff"
-        }
-        }
-    }
+const openSign = "(){";
+const openTag = "<";
+const closeTag="/>";
 
     return (
         <div>                 
             <div className="hero">
-                <Particles params={particlesOptions} className="bgParticles" />   
-                <h2>Lucas Sacheto</h2>
-                <p>Front End Developer</p>
+                
+                <div className="codeTitle">
+                    <div className="function">function</div>
+                    <h2>Lucas Sacheto</h2>
+                    <div className="openSign"> {openSign}   </div>
+                    <div className="return"> return </div>
+                    <div className="openSign2">(</div>
+                    <div className="openTag">{openTag}</div>
+                    <div className="title">Front End Developer</div>
+                    <div className="closeTag">{closeTag}</div>
+                    <div className="closeSign">)</div>
+                    <div className="closeSignFinal">}</div>
+                </div> 
+
+
                 <div className="buttonEffectContainer">
                     <form action="https://linkedin.com/in/lucassacheto">
                         <button type="submit" formTarget="_blank" className="btnCheckProfile" aria-label="check my profile">request my resume </button>
