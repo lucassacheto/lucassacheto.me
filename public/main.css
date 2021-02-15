@@ -17,7 +17,8 @@ body.dark{background-color: #303841;}
 .dark .sidebar{background: #222831;}
 .dark .sidebar h1 a{color:#00adb5;background-color: #404b69;font-family: 'Poppins', sans-serif;}
 .dark ul.menu li button{color:#fff;}
-.dark .hero{background-color: #393e46;}
+.dark .hero{background-image: linear-gradient(120deg, #393e46 50%,#303841);}
+.dark .listWorks li{background-image: linear-gradient(120deg, #393e46 20%,#303841);}
 
 body.light{background: #bfe4f0;}
 .light .sidebar button{color:#303841;}
@@ -26,17 +27,19 @@ body.light{background: #bfe4f0;}
 .light .sidebar h1 a:hover{color:#00adb5;}
 .light .sidebar cite{color:#303841;}
 .light ul.menu li button{color:#404b69;}
-.light .hero{background-color: #404b69;}
+.light .hero{background-image: linear-gradient(120deg, #404b69 50%,#303841);}
 .light .listWorks h1{color:#404b69;}
 .light .listWorks h2{color:#404b69}
+.light .listWorks li{background-image: linear-gradient(120deg, #dbedf3 20%, #bfe4f0);}
 .light .listWorks .filterListWorks button{color:#404b69;}
 .light .listWorks .filterListWorks button:hover{background: #404b69;color:#fff;}
 .light .listWorks .filterListWorks button.selected{background: #404b69;color:#fff;}
 .light .listWorks .info h2 a, 
 .light .listWorks .info p{color:#404b69;}
-.light .listWorks button.btnCheckWorks{color:#404b69;}
-.light .listWorks button.btnCheckWorks:hover{color:#eee;}
-.light .listWorks ul li{background-color: #dbedf3;}
+.light .listWorks button.btnOpenWorks{color:#404b69;}
+.light .listWorks button.btnOpenWorks:hover{color:#eee;}
+.light .listWorks button.btnCodeWorks{color:#404b69;}
+.light .listWorks button.btnCodeWorks:hover{color:#eee;}
 .light ul.menu li:hover button{color:#eee;}
 .light ul.menu li:hover,.selected{background: #404b69;}
 
@@ -81,30 +84,23 @@ ul.menu button img{padding: 0 10px;width: 20px;height: 20px;margin-bottom: 5px;}
 
 .content{width: 100%;box-sizing: border-box;padding-bottom: 40px;}
 
-.hero{padding: 40px 40px;box-sizing: border-box;box-shadow: 2px 0 10px#303841;  background-image: linear-gradient(120deg, #393e46 50%,#303841);
-}
-
-.hero .codeTitle{margin-bottom: 40px;display: block;overflow: hidden;width: 100%;font-family: 'Poppins', arial;font-weight: 600;}
-
+.hero{padding: 40px 40px;box-sizing: border-box;box-shadow: 2px 0 10px#303841;}
+.hero .codeTitle{margin-bottom: 40px;display: block;overflow: hidden;width: 100%;font-family: 'Poppins', arial;font-weight: 600;word-break: break-all;}
 .hero .function, .hero .openTag, .hero .openSign, .hero .return, .hero .openSign2, .hero .closeTag, .hero .closeSign, .hero .closeSignFinal{display: none;}
-
 .hero h2{clear: both;font-size: 60px;background: linear-gradient(to right, #00adb5, #404b69 70%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;}
 .hero .title{clear: both;font-size: 60px;background: linear-gradient(to right, #00adb5, #404b69 70% );-webkit-background-clip: text;-webkit-text-fill-color: transparent;}
-
-
-/* .hero p{font-size: 30px;color:#dbedf3;width: auto;margin-bottom: 40px;line-height: 1.4;} */
 .hero button.btnCheckProfile{color:#eee;font-size: 12px;text-transform: uppercase;padding: 10px;position: relative;z-index: 10;box-shadow: 2px 2px #00adb5;font-family: 'Poppins', sans-serif;font-weight: 600;}
-.hero .buttonEffectContainer span{display: block;width: 142px;height: 32px;top: 2px;position:absolute;}
+.hero .buttonEffectContainer span.bgCheckProfile{display: block;width: 142px;height: 32px;top: 2px;position:absolute;}
 
 /* Only Safari 10.1+ */
 @media not all and (min-resolution:.001dpcm)
 { @supports (-webkit-appearance:none) {
-    .hero .buttonEffectContainer span {width:155px;}
-    .listWorks .buttonEffectContainer span{width: 82px;}
+    .hero .buttonEffectContainer span.bgCheckProfile {width:155px;}
+    /* .listWorks .buttonEffectContainer span{width: 82px;} */
 }}
 
 .hero .buttonEffectContainer{position: relative;}
-.hero button.btnCheckProfile:hover + span{animation: button-effect 0.2s both;height: 32px;}
+.hero button.btnCheckProfile:hover + span.bgCheckProfile{animation: button-effect 0.2s both;height: 32px;}
 
 
 .bgParticles{position: absolute;right: 0;left: 0;top: 0;height: 380px;}
@@ -112,7 +108,7 @@ ul.menu button img{padding: 0 10px;width: 20px;height: 20px;margin-bottom: 5px;}
 .homeContent{padding: 80px 40px;display: flex;}
 
 .listWorks{width: 100%;}
-.listWorks h1{color:#eee;font-size: 40px;margin-bottom: 40px;text-transform: uppercase;}
+.listWorks h1{color:#eee;font-size: 40px;margin-bottom: 40px;text-transform: uppercase;color:#00adb5;}
 
 .listWorks .icons{display: flex;margin: 20px 0 0;flex-wrap: wrap;}
 .listWorks .icons img{width: auto;margin-bottom: 10px;height: 28px;}
@@ -123,30 +119,38 @@ ul.menu button img{padding: 0 10px;width: 20px;height: 20px;margin-bottom: 5px;}
 .listWorks .filterListWorks button.selected{background: #00adb5;border-radius: 6px;}
 
 .listWorks ul{margin: 20px 0;}
-.listWorks ul li{margin: 20px 0;background: #3a4750;border-radius: 8px;box-shadow: 2px 2px #00adb5;padding: 20px;color:#eeeeee;-webkit-animation: scale-up-hor-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;animation: scale-up-hor-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;display: flex;}
-.listWorks li img{width: 100px;margin-right: 20px;}
+.listWorks ul li{margin: 20px 0;border-radius: 8px;padding: 20px;color:#eeeeee;-webkit-animation: scale-up-hor-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;animation: scale-up-hor-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;display: flex;}
+.listWorks li img{width: 100px;margin-right: 20px;height: 100px;}
 .listWorks li .info{display: block;}
 .listWorks .info h2{display: block;font-size: 20px;margin-bottom: 10px;}
 .listWorks .info h2 a{color:#eee;text-decoration: none;}
 .listWorks .info p{display: block;line-height: 1.4;font-size: 14px;font-weight: 300;}
 
-.listWorks button.btnCheckWorks{color:#eee;font-size: 12px;text-transform: uppercase;padding: 10px;position: relative;z-index: 10;box-shadow: 2px 2px #00adb5;font-family: 'Poppins', sans-serif;font-weight: 600;margin-top: 20px;}
-.listWorks .buttonEffectContainer span{display: block;width: 66px;height: 32px;top: 23px;position:absolute;}
+.listWorks button.btnOpenWorks{color:#eee;font-size: 12px;text-transform: uppercase;padding: 10px;position: relative;z-index: 10;box-shadow: 2px 2px #00adb5;font-family: 'Poppins', sans-serif;font-weight: 600;margin-top: 20px;}
+.listWorks .buttonEffectContainer span.bgOpenWorks{display: block;width: 50px;height: 32px;top: 23px;position:absolute;}
+
+.listWorks button.btnCodeWorks{color:#eee;font-size: 12px;text-transform: uppercase;padding: 10px;position: relative;z-index: 10;box-shadow: 2px 2px #00adb5;font-family: 'Poppins', sans-serif;font-weight: 600;margin-top: 20px;}
+.listWorks .buttonEffectContainer span.bgCodeWorks{display: block;width: 85px;height: 32px;top: 23px;position:absolute;}
+
+.listWorks .worksActions{display: flex;}
+.listWorks .worksActions > div:first-child{margin-right: 20px;}
+
 /* Only Safari 10.1+ */
 @media not all and (min-resolution:.001dpcm)
 { @supports (-webkit-appearance:none) {  
-    .listWorks .buttonEffectContainer span{width: 70px;top: 20px;}
+    .listWorks .buttonEffectContainer span.bgOpenWorks{width: 55px;top: 20px;}
+    .listWorks .buttonEffectContainer span.bgCodeWorks{width: 89px;top: 20px;}
 }}
 .listWorks .buttonEffectContainer{position: relative;}
-.listWorks button.btnCheckWorks:hover + span{animation: button-effect 0.2s both;height: 32px;}
+.listWorks button.btnOpenWorks:hover + span.bgOpenWorks{animation: button-effect 0.2s both;height: 32px;}
+.listWorks button.btnCodeWorks:hover + span.bgCodeWorks{animation: button-effect 0.2s both;height: 32px;}
 
 .listBlogPosts{width: 400px;}
-
 
 .container section.works{padding: 80px 20px;}
 
 @media only screen and (min-width: 568px) {    
-    ul.menu{padding-left: 20px;width: 40%;}
+    ul.menu{width: 40%;}
     ul.menu li button{font-size: 14px;}
 
     .profile{display:block;}
@@ -154,12 +158,11 @@ ul.menu button img{padding: 0 10px;width: 20px;height: 20px;margin-bottom: 5px;}
     .profile .profile-picture img{width: 60px;border-radius: 50%;}
     .profile .btnReachOut img.iconReachOut{width: 14px;height: 11px;margin:26%;}
     .profile a.btnReachOut{display: block;width:100px;margin:auto;display: flex;}
-    
 }
 
 @media only screen and (min-width: 880px) {
 
-    .sidebar{ height: 100%; width:200px; background: #222831; box-sizing: border-box; padding: 20px; position: fixed; box-shadow: 2px 0 10px#303841; display: unset; }
+    .sidebar{ height: 100%; width:160px; background: #222831; box-sizing: border-box; padding: 20px; position: fixed; box-shadow: 2px 0 10px#303841; display: unset; }
     .sidebar cite{margin:10px auto;display: block;font-size: 10px;color:#eee;text-align: center;font-weight: normal;}
 
     ul.menu{ margin: 60px auto; display: block; width: 100%; }
@@ -167,13 +170,13 @@ ul.menu button img{padding: 0 10px;width: 20px;height: 20px;margin-bottom: 5px;}
     ul.menu li img{margin: -2px 0;}    
     ul.menu li:hover,.selected{background: #00adb5;border-radius: 6px;}
 
-    .hero{padding: 80px 0 80px 280px;}
+    .hero{padding: 80px 0 80px 220px;}
     .bgParticles{position: absolute;right: 0;left: 500px;top: 0;height: 510px;}
     
-    .homeContent{padding: 80px 80px 80px 280px;}
+    .homeContent{padding: 80px 80px 80px 220px;}
     .container section.works{padding: 80px 240px;}
 
-    .profile{margin: auto;text-align: center;position: absolute;bottom: 50px;left: 50px;}
+    .profile{margin: auto;text-align: center;position: absolute;bottom: 50px;left: 32px;}
     .profile .btnReachOut img.iconReachOut{margin: auto;}
     .profile a.btnReachOut{display: block;}
 

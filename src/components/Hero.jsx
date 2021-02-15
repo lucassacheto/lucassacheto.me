@@ -27,7 +27,7 @@ const closeTag="/>";
                 <div className="buttonEffectContainer">
                     <form action="https://linkedin.com/in/lucassacheto">
                         <button type="submit" formTarget="_blank" className="btnCheckProfile" aria-label="check my profile">request my resume </button>
-                        <span></span>
+                        <span className="bgCheckProfile"></span>
                     </form>
                 </div>
             </div>

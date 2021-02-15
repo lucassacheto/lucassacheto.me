@@ -44,12 +44,20 @@ function ListWorks(){
                             {w.sass && <img src={w.sass} alt="" /> }
                             {w.wordpress && <img src={w.wordpress} alt="" /> }
                         </div>
-                        {w.url !== "" && <div className="buttonEffectContainer">
-                            <form action={w.url}>
-                            <button className="btnCheckWorks" type="submit" formTarget="_blank">details</button>
-                            <span></span>
-                            </form>
-                        </div>}
+                        <div className="worksActions">
+                            {w.url !== "" && <div className="buttonEffectContainer">
+                                <form action={w.url}>
+                                <button className="btnOpenWorks" type="submit" formTarget="_blank">open</button>
+                                <span className="bgOpenWorks"></span>
+                                </form>
+                            </div>}
+                            {w.source !== "" && <div className="buttonEffectContainer">
+                                <form action={w.source}>
+                                <button className="btnCodeWorks" type="submit" formTarget="_blank">view code</button>
+                                <span className="bgCodeWorks"></span>
+                                </form>
+                            </div>}
+                        </div>
                     </div>
                 </li>) : Works.map(w => w.type === activeFilter && 
                 <li key={w.id}>
@@ -69,12 +77,20 @@ function ListWorks(){
                             {w.sass && <img src={w.sass} alt="" /> }
                             {w.wordpress && <img src={w.wordpress} alt="" /> }
                         </div>
-                        {w.url !== "" && <div className="buttonEffectContainer">
-                            <form action={w.url}>
-                            <button className="btnCheckWorks" type="submit" formTarget="_blank">details</button>
-                            <span></span>
-                            </form>
-                        </div>}
+                        <div className="worksActions">
+                            {w.url !== "" && <div className="buttonEffectContainer">
+                                <form action={w.url}>
+                                <button className="btnOpenWorks" type="submit" formTarget="_blank">open</button>
+                                <span className="bgOpenWorks"></span>
+                                </form>
+                            </div>}
+                            {w.source !== "" && <div className="buttonEffectContainer">
+                                <form action={w.source}>
+                                <button className="btnCodeWorks" type="submit" formTarget="_blank">view code</button>
+                                <span className="bgCodeWorks"></span>
+                                </form>
+                            </div>}
+                        </div>
                     </div>
                 </li>)                    
                 }

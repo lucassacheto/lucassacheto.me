@@ -21,4 +21,23 @@
     100% {
         background-color:#f73859;        
         }
-    }
+}
+
+.heroAni-appear{
+    opacity: 0;
+}
+
+.heroAni-appear-done {
+    opacity: 1; 
+    transition: 1s;
+}
+      
+.sideBarAni-appear{
+    position: relative;
+    left: -200px;
+}
+.sideBarAni-appear-done{
+    left: 0;
+    transition: 1s;
+}
+      
