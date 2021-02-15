@@ -31,13 +31,17 @@
     opacity: 1; 
     transition: 1s;
 }
-      
-.sideBarAni-appear{
-    position: relative;
-    left: -200px;
+
+
+@media only screen and (min-width: 880px) {
+    .sideBarAni-appear{
+        left: -200px;
+    }
+    .sideBarAni-appear-done{
+        left: 0;
+        transition: 1s;
+    }
 }
-.sideBarAni-appear-done{
-    left: 0;
-    transition: 1s;
-}
+
+
       
