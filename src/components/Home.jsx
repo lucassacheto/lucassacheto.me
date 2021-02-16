@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React from "react";
 import Hero from "./Hero";
 import HomeContent from "./HomeContent";
 import {CSSTransition} from "react-transition-group";
@@ -6,10 +6,10 @@ import {CSSTransition} from "react-transition-group";
 
 
 function Home(){
-    const [display, seDisplay] = useState(true)
+    
     return (
         <div className="content">
-            <CSSTransition in={display} timeout={350} classNames="heroAni" appear>
+            <CSSTransition in={true} timeout={350} classNames="heroAni" appear>
                 <Hero />
             </CSSTransition>
             <HomeContent />

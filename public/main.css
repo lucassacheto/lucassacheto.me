@@ -85,13 +85,15 @@ ul.menu button img{padding: 0 10px;width: 20px;height: 20px;margin-bottom: 5px;}
 .content{width: 100%;box-sizing: border-box;padding-bottom: 40px;}
 
 .hero{padding: 40px 40px;box-sizing: border-box;box-shadow: 2px 0 10px#303841;}
+
+/* HERO LOGO */
 .hero .codeTitle{margin-bottom: 40px;display: block;overflow: hidden;width: 100%;font-family: 'Poppins', arial;font-weight: 600;word-break: break-all;}
 .hero .function, .hero .openTag, .hero .openSign, .hero .return, .hero .openSign2, .hero .closeTag, .hero .closeSign, .hero .closeSignFinal{display: none;}
-.hero h2{clear: both;font-size: 60px;background: linear-gradient(to right, #00adb5, #404b69 70%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;}
-.hero .title{clear: both;font-size: 60px;background: linear-gradient(to right, #00adb5, #404b69 70% );-webkit-background-clip: text;-webkit-text-fill-color: transparent;}
+.hero h2{clear: both;font-size: 56px;background: linear-gradient(to right, #00adb5, #404b69 70%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;word-break: initial;margin-bottom: 20px;}
+.hero .title{clear: both;font-size: 50px;background: linear-gradient(to right, #00adb5, #404b69 70% );-webkit-background-clip: text;-webkit-text-fill-color: transparent;word-break: initial;}
+
 .hero button.btnCheckProfile{color:#eee;font-size: 12px;text-transform: uppercase;padding: 10px;position: relative;z-index: 10;box-shadow: 2px 2px #00adb5;font-family: 'Poppins', sans-serif;font-weight: 600;}
 .hero .buttonEffectContainer span.bgCheckProfile{display: block;width: 142px;height: 32px;top: 2px;position:absolute;}
-
 /* Only Safari 10.1+ */
 @media not all and (min-resolution:.001dpcm)
 { @supports (-webkit-appearance:none) {

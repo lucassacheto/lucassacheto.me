@@ -14,7 +14,7 @@ const Works = [
         node: "./assets/nodejs.png",
         wordpress: "",
         photoshop:"",
-        github: "./assets/github.png"        
+        github: ""        
     },
     {
         id: 2,
@@ -31,7 +31,7 @@ const Works = [
         node: "",
         wordpress: "./assets/wordpress.png",        
         photoshop: "./assets/photoshop.png",
-        github: "./assets/github.png"
+        github: ""
     },
     {
         id: 3,
@@ -47,7 +47,7 @@ const Works = [
         node:"",        
         wordpress: "./assets/wordpress.png",
         photoshop:"",
-        github: "./assets/github.png"
+        github: ""
     },
     {
         id: 4,
@@ -63,7 +63,7 @@ const Works = [
         node:"",        
         wordpress: "",
         photoshop:"",
-        github: "./assets/github.png"
+        github: ""
     },
     {
         id: 5,
@@ -79,7 +79,7 @@ const Works = [
         node:"",
         wordpress: "",
         photoshop:"",
-        github: "./assets/github.png"
+        github: ""
     }
 ]
 
