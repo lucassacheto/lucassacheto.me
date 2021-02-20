@@ -1,4 +1,36 @@
-const Works = [    
+const Works = [
+    {
+        id: 6,
+        name: "Movies Database Search",
+        description: "Autocomplete for search movies",
+        type: "app",
+        url: "https://lucassacheto.me/lucassacheto/MoviesDatabase",
+        source: "https://github.com/lucassacheto/movie-database",
+        html: "./assets/html5.png",
+        css: "./assets/css3.png",
+        js: "./assets/javascript.png",
+        react: "./assets/react.png",
+        node:"",
+        wordpress: "",
+        photoshop:"",
+        github: ""
+    },    
+    {
+        id: 5,
+        name: "Tax Calculator",
+        description: "Canadian Tax Calculator build in React",
+        type: "app",
+        url: "https://lucassacheto.me/lucassacheto/tax-calculator",
+        source: "https://github.com/lucassacheto/tax-calculator",
+        html: "./assets/html5.png",
+        css: "./assets/css3.png",
+        js: "./assets/javascript.png",
+        react: "./assets/react.png",
+        node:"",
+        wordpress: "",
+        photoshop:"",
+        github: ""
+    },
     {
         id: 1,
         name: "Portfolio",
@@ -61,22 +93,6 @@ const Works = [
         js: "./assets/javascript.png",
         react: "./assets/react.png",
         node:"",        
-        wordpress: "",
-        photoshop:"",
-        github: ""
-    },
-    {
-        id: 5,
-        name: "Tax Calculator",
-        description: "Canadian Tax Calculator build in React",
-        type: "app",
-        url: "https://lucassacheto.me/lucassacheto/tax-calculator",
-        source: "https://github.com/lucassacheto/tax-calculator",
-        html: "./assets/html5.png",
-        css: "./assets/css3.png",
-        js: "./assets/javascript.png",
-        react: "./assets/react.png",
-        node:"",
         wordpress: "",
         photoshop:"",
         github: ""
