@@ -28,7 +28,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 .skills .react{background: url(../assets/react.png) no-repeat;background-size: contain;width: 100px;height: 100px;}
 
 .intro{padding: 40px;box-sizing: border-box;}
-.intro p{display: flex;max-width: 640px;color: var(--white);font-size: 40px;background: linear-gradient(to right, var(--green), #404b69 70%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;line-height: 1.4;}
+.intro p{display: flex;color: var(--white);font-size: 40px;background: linear-gradient(to right, var(--green), #404b69 70%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;line-height: 1.4;}
 
 @media not all and (min-resolution:.001dpcm)
 { @supports (-webkit-appearance:none) {

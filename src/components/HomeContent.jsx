@@ -7,7 +7,7 @@ function HomeContent(){
             {/* <Works /> */}
 
             <div className="intro">
-                <p>I am a Front End Developer with experience building websites <br />and web applications.<br /><br /> I specialize in HTML/CSS and have professional experience working with Javascript.</p>
+                <p>I am a Front End Developer with experience building websites and web applications.<br /><br /> I specialize in HTML/CSS and have professional experience working with Javascript.</p>
             </div>
 
             <div className="skills">
