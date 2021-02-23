@@ -1,6 +1,6 @@
 const Works = [
     {
-        id: 6,
+        id: 1,
         name: "Movies Database Search",
         description: "Autocomplete for search movies",
         type: "app",
@@ -13,10 +13,11 @@ const Works = [
         node:"",
         wordpress: "",
         photoshop:"",
-        github: ""
+        github: "",
+        day: "Feb/2021"
     },    
     {
-        id: 5,
+        id: 2,
         name: "Tax Calculator",
         description: "Canadian Tax Calculator build in React",
         type: "app",
@@ -29,10 +30,11 @@ const Works = [
         node:"",
         wordpress: "",
         photoshop:"",
-        github: ""
+        github: "",
+        day: "Feb/2021"
     },
     {
-        id: 1,
+        id: 3,
         name: "Portfolio",
         description: "The website you are navigation on :)",
         type: "web",
@@ -46,10 +48,11 @@ const Works = [
         node: "./assets/nodejs.png",
         wordpress: "",
         photoshop:"",
-        github: ""        
+        github: "",
+        day: "Dec/2020"
     },
     {
-        id: 2,
+        id: 4,
         name: "SJOC Website",
         description: "Designed and developed company's website in HTML, CSS, JS, and WordPress",
         type: "web",
@@ -63,26 +66,11 @@ const Works = [
         node: "",
         wordpress: "./assets/wordpress.png",        
         photoshop: "./assets/photoshop.png",
-        github: ""
+        github: "",
+        day: "April/2018"
     },
     {
-        id: 3,
-        name: "Personal Blog",
-        description: "Personal blog built in WordPress using HTML, CSS and VanillaJS",
-        type: "web",
-        url: "https://lucassacheto.me/lucassacheto/wp_template/",
-        source: "https://github.com/lucassacheto/wp_template/tree/master/omdl",
-        html: "./assets/html5.png",
-        css: "./assets/css3.png",
-        js: "./assets/javascript.png",
-        react:"",
-        node:"",        
-        wordpress: "./assets/wordpress.png",
-        photoshop:"",
-        github: ""
-    },
-    {
-        id: 4,
+        id: 5,
         name: "Robo Friends",
         description: "Single page application in React and JSON listing robots via API using input filter",
         type: "app",
@@ -95,8 +83,27 @@ const Works = [
         node:"",        
         wordpress: "",
         photoshop:"",
-        github: ""
+        github: "",
+        day: "Jan/2019"
+    },
+    {
+        id: 6,
+        name: "Personal Blog",
+        description: "Personal blog built in WordPress using HTML, CSS and VanillaJS",
+        type: "web",
+        url: "https://lucassacheto.me/lucassacheto/wp_template/",
+        source: "https://github.com/lucassacheto/wp_template/tree/master/omdl",
+        html: "./assets/html5.png",
+        css: "./assets/css3.png",
+        js: "./assets/javascript.png",
+        react:"",
+        node:"",        
+        wordpress: "./assets/wordpress.png",
+        photoshop:"",
+        github: "",
+        day: "Jan/2016"
     }
+    
 ]
 
 export default Works;

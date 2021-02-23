@@ -1,17 +1,16 @@
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 import Sidebar from  "./Sidebar";
 import Home from "./Home";
 import Works from "./Works";
+import About from "./About";
+import { Route } from "react-router-dom";
 
 function App(){
     
-    const [section, setSection] = useState("home");    
+    
     const [theme, setTheme] = useState("dark");
     document.body.classList = (theme);
 
-    function changeSection(event){
-        setSection(event.target.name);
-    }
 
     function changeTheme(event){
         const {value} = event.target;
@@ -22,9 +21,10 @@ function App(){
     return (
         <div className="container">
             <div className={theme}>
-                <Sidebar currentSection={section} changeSection={changeSection} changeTheme={changeTheme} currentTheme={theme} />
-                { section === "home" && <Home />}            
-                { section === "works" && <Works currentSection={section} />}
+                <Sidebar changeTheme={changeTheme} currentTheme={theme} />
+                <Route path="/" exact component={Home} />
+                <Route path="/works" component={Works} />
+                <Route path="/about" component={About} />
             </div>
         </div>
     )

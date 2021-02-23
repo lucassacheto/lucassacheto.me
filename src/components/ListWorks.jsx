@@ -1,7 +1,6 @@
 import React, {useState} from "react";
 import Works from "../works";
 
-
 function ListWorks(){
     
     const [activeFilter, setFilter] = useState("all");
@@ -16,19 +15,20 @@ function ListWorks(){
     //console.log(FilterWorks);
 
     return (
-        <div className="listWorks">
-            <h1>Works</h1>
+        <div className="listWorks">            
+            
             <div className="filterListWorks">
                 <p><button name="all" key="10" onClick={changeFilter} className={ activeFilter === "all" ? "selected" : undefined }>all</button></p>
                 {                
                     FilterWorks.map((w,index) => <p key={index}><button name={w} onClick={changeFilter} className={ activeFilter === w ? "selected" : undefined }>{w}</button></p>)
                 }
             </div>
+            
             <ul>
                 {
-                activeFilter === "all" ? Works.map(w => 
-                <li key={w.id}>
-                    {/* <img src={w.imgURL} alt={w.name} /> */}
+                activeFilter === "all" ? Works.map(w =>
+                <li key={w.id} className={w.type}>
+                    {/* <img src={w.imgURL} alt={w.name} /> */}                    
                     <div className="info">
                         <h2>{w.name}</h2>
                         <p>{w.description}</p>
@@ -59,6 +59,7 @@ function ListWorks(){
                             </div>}
                         </div>
                     </div>
+                    
                 </li>) : Works.map(w => w.type === activeFilter && 
                 <li key={w.id}>
                     {/* <img src={w.imgURL} alt={w.name} /> */}
