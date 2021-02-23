@@ -19,7 +19,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     
 }
 
-.skills{display: flex;margin: 40px auto;max-width: 400px;}
+.skills{display: flex;margin: 40px;}
 .skills div{margin-right: 40px;}
 .skills div:last-child{margin-right: 0;}
 .skills .html{background: url(../assets/html5.png) no-repeat;background-size: contain;width: 100px;height: 100px;}
@@ -29,6 +29,11 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 
 .intro{padding: 40px;box-sizing: border-box;}
 .intro p{display: flex;max-width: 640px;color: var(--white);font-size: 40px;background: linear-gradient(to right, var(--green), #404b69 70%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;line-height: 1.4;}
+
+@media not all and (min-resolution:.001dpcm)
+{ @supports (-webkit-appearance:none) {
+    .intro p{-webkit-text-fill-color:var(--green)}
+}}
 
 
 /* Switch Theme Button*/
