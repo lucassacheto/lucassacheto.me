@@ -60,6 +60,7 @@ my-content{
 my-content a{
     font-size:40px;
     margin-bottom: 8px;
+    width: 200px;
 }
 my-content a:hover{
     color:var(--pink);
