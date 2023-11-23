@@ -1,0 +1,71 @@
+html, body { padding: 20px; margin: 0; line-height: 1; } a { color: inherit; text-decoration: none; } * { box-sizing: border-box; list-style: none; padding: 0; margin: 0; }
+
+:root {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+
+    --pink: #FB2576;
+    --black-dark: #1a1a1a;
+}
+
+body{
+    background-color: var(--black-dark);
+    color:white;
+    font-family: 'Bebas Neue', sans-serif;;
+}
+
+
+my-header{
+    font-weight: bold;
+}
+
+my-header .title{
+    font-size: 80px;
+
+}
+
+my-header p{
+    font-size: 30px;
+}
+
+my-menu {
+    font-size: 20px;
+    display: flex;
+    margin-top: 20px;
+}
+my-menu ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 320px;
+}
+my-menu li{
+    justify-content: space-between;
+}
+
+my-content{
+    display: flex;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+my-content a{
+    font-size:40px;
+    margin-bottom: 8px;
+}
+my-content a:hover{
+    color:var(--pink);
+    font-size: 60px;
+}
+
+my-content p{
+    margin-top: 50px;
+}
